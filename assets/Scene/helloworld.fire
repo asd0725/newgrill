@@ -73,18 +73,21 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 8
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 8
-      },
-      {
         "__id__": 9
       },
       {
         "__id__": 10
+      },
+      {
+        "__id__": 11
       }
     ],
     "_prefab": null,
@@ -358,6 +361,64 @@
     "_id": "a5pcVslddJiaS/bgP8Zdi+"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "objects",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": "d4P3+W6PRGequPn6kJeS0k"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -373,17 +434,6 @@
     "_fitWidth": true,
     "_fitHeight": false,
     "_id": "6cjE1gAMVEpo9aHxG1O7ws"
-  },
-  {
-    "__type__": "e1b90/rohdEk4SdmmEZANaD",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "label": null,
-    "_id": "a2ZmMVI8NLc5niUxhPc0N4"
   },
   {
     "__type__": "cc.Widget",
@@ -411,5 +461,23 @@
     "_originalWidth": 0,
     "_originalHeight": 0,
     "_id": "0drmLkS+FJjINSmWxcgUUE"
+  },
+  {
+    "__type__": "ab3baSKRQBEvI4CbPWIA4OU",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "objects": {
+      "__id__": 8
+    },
+    "max": 1000,
+    "cyclTime": 0.03,
+    "fishPre": {
+      "__uuid__": "2397cc74-e6af-4482-8615-514fab41cf7e"
+    },
+    "_id": "fdM4P6335O0bUrmpmcMrAm"
   }
 ]

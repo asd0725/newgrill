@@ -7,6 +7,7 @@
 
 import { cBody } from "../../collision/Body";
 import { Trigger, cObject } from "../../collision/Object";
+import EngineUtil from "../util/EngineUtil";
 
 const {ccclass, property} = cc._decorator;
 
@@ -16,7 +17,12 @@ export default class Fish extends cObject {
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {}
+    onLoad () {
+        this.schedule(()=>{
+            this.updatePos()
+        },1)
+        this.updatePos()
+    }
     //缓存池管理
     static pools: Array<Fish> = [];
     static get(prefab: cc.Prefab) {
@@ -36,6 +42,12 @@ export default class Fish extends cObject {
         ghost.remove(false);
     }
 
+
+    private updatePos(){
+        let pos_x = EngineUtil.getRandomNum(-200,200)
+        let pos_y = EngineUtil.getRandomNum(-200,200)
+        cc.tween(this.node).by(1,{x:pos_x,y:pos_y}).start()
+    }
 
     start () {
 
